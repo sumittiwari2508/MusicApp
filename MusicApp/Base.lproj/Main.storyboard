@@ -1,24 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9vQ-9R-Cu1">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--FIND-->
+        <scene sceneID="hdo-yU-sUH">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="ogw-jV-bZG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wnR-IA-nWp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="Oa7-k9-h9e"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="FIND" id="OpK-wR-Kz8"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FLm-dX-i8Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="657.97101449275362" y="460.71428571428567"/>
+        </scene>
+        <!--SETTING-->
+        <scene sceneID="yjA-k4-PMS">
+            <objects>
+                <viewController id="B2S-Od-LCL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zzQ-GS-wbs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="MEz-dM-RBL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="SETTING" id="kWc-v9-Qzb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xSF-Xw-Kup" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1900.0000000000002" y="391.74107142857139"/>
+        </scene>
+        <!--Amazonmusic-->
+        <scene sceneID="bDs-Yu-Exe">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="OU9-Go-wza" customClass="ViewController" customModule="MusicApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r54-va-2od">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="n19-dF-SZl">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kDo-Hv-XdX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kDo-Hv-XdX" firstAttribute="bottom" secondItem="n19-dF-SZl" secondAttribute="bottom" id="IAN-hb-AQ0"/>
+                            <constraint firstItem="n19-dF-SZl" firstAttribute="leading" secondItem="kDo-Hv-XdX" secondAttribute="leading" id="j7S-Lp-XsQ"/>
+                            <constraint firstItem="kDo-Hv-XdX" firstAttribute="trailing" secondItem="n19-dF-SZl" secondAttribute="trailing" id="k9a-da-xWA"/>
+                            <constraint firstItem="n19-dF-SZl" firstAttribute="top" secondItem="kDo-Hv-XdX" secondAttribute="top" id="sl6-Gl-npm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Amazonmusic" id="CjN-1f-AyP"/>
+                    <connections>
+                        <outlet property="musicTableView" destination="n19-dF-SZl" id="1Wc-lG-K1w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gIU-Ty-WnU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-589.85507246376812" y="418.52678571428572"/>
+        </scene>
+        <!--Tabbar View Controller-->
+        <scene sceneID="q4H-g7-uMR">
+            <objects>
+                <tabBarController storyboardIdentifier="TabbarViewController" id="9vQ-9R-Cu1" customClass="TabbarViewController" customModule="MusicApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GkL-ls-c9J">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="DR5-gp-JZD" kind="relationship" relationship="viewControllers" id="QWR-9h-JcZ"/>
+                        <segue destination="ogw-jV-bZG" kind="relationship" relationship="viewControllers" id="hZB-2t-C44"/>
+                        <segue destination="Yzu-Dn-Q6I" kind="relationship" relationship="viewControllers" id="iVG-9d-L1c"/>
+                        <segue destination="B2S-Od-LCL" kind="relationship" relationship="viewControllers" id="JdJ-HO-RHe"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ydc-1s-Ksy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-859" y="-266"/>
+        </scene>
+        <!--MY MUSIC-->
+        <scene sceneID="ybK-X2-4EX">
+            <objects>
+                <viewController id="Yzu-Dn-Q6I" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uws-A7-TeO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Hf4-gX-tnx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="MY MUSIC" id="WfS-KZ-VhI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1mL-GI-tid" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="561" y="-326"/>
+        </scene>
+        <!--HOME-->
+        <scene sceneID="2qm-zT-9YB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DR5-gp-JZD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="HOME" id="2zX-bC-uBa"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dPe-Ff-ecO">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="OU9-Go-wza" kind="relationship" relationship="rootViewController" id="pXc-N0-K0F"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cbA-O2-i48" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1500.0000000000002" y="418.52678571428572"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

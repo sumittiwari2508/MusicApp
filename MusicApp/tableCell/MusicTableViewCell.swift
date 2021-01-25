@@ -9,9 +9,13 @@ import UIKit
 
 class MusicTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var img: UIImageView!
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var singlerName: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.img.layer.cornerRadius = 8
+          self.img.clipsToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

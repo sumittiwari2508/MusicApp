@@ -9,9 +9,13 @@ import UIKit
 
 class musicCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var img: UIImageView!
+    @IBOutlet weak var musicName: UILabel!
+    @IBOutlet weak var singername: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.img.layer.cornerRadius = 8
+          self.img.clipsToBounds = true
     }
 
 }
